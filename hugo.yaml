@@ -1,3 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://mhsuab.github.io/
 languageCode: en-us
-title: My New Hugo Site
+title: mhsuab
+theme: paper-mod
