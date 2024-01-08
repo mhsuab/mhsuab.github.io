@@ -5,13 +5,13 @@ on:
     branches:
       # trigger by the update of main branch
       - main
-  pull_request:
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-22.04
-    permissions:
-      contents: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
