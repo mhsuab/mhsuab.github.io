@@ -1,4 +1,82 @@
-baseURL: https://mhsuab.github.io/
+baseURL: "https://mhsuab.github.io/"
 languageCode: en-us
 title: mhsuab
-theme: paper-mod
+paginate: 5
+theme: [paper-mod]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts", "papermod"]
+
+minify:
+  disableXML: true
+
+languages:
+  en:
+    languageName: ":us:"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  author: 'mhsuab' # multiple authors
+
+  defaultTheme: auto
+  ShowShareButtons: true
+  # ShowReadingTime: true
+  # disableSpecial1stPost: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  comments: false
+
+  profileMode:
+    enabled: true
+    title: Mindy Hsu
+    imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f405.svg"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/mhsuab"
+    - name: LinkedIn
+      url: "https://linkedin.com/in/mhsuab"
+
+  assets:
+    disableHLJS: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
