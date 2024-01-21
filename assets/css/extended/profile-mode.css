@@ -1,0 +1,30 @@
+.profile .profile_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+}
+
+.profile_inner p {
+    margin-bottom: calc(var(--gap));
+}
+
+.profile_inner h1 {
+    color: var(--user-p);
+    border-bottom: 2px solid var(--user-p);
+    margin: calc(var(--gap));
+}
+
+.profile_inner p > a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.profile_inner p > strong {
+    color: var(--user-p);
+}
+
+.profile_inner p > a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,12 @@
+:root {
+  --user-p: #0E2442;
+  --user-s: #DDE5EB;
+  --secondary: #0E2442;
+  --link: #007B8A;
+}
+
+.dark {
+  --user-p: #DDE5EB;
+  --user-s: #0E2442;
+  --secondary: #DDE5EB;
+}

@@ -27,15 +27,20 @@ languages:
     menu:
       main:
         - name: Archive
-          url: archives
+          url: archives/
           weight: 5
         - name: Search
           url: search/
           weight: 10
-        - name: Tags
+        - name: Category
+          url: categories/
+          weight: 15
+        - name: Tag
           url: tags/
-          weight: 10
-
+          weight: 15
+        - name: Series
+          url: series/
+          weight: 15
 
 outputs:
   home:
@@ -62,14 +67,20 @@ params:
 
   profileMode:
     enabled: true
-    title: Mindy Hsu
-    imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f405.svg"
+    title: Mindy (Min-Chien) Hsu
+    subtitle: |
+      Hello! I just finished my study as a master student in the Department of **Electrical and Computer Engineering** at CMU.
+
+      I enjoy playing CTFs (as a member of [PPP](https://ctftime.org/team/284)).
+    imageUrl: "android-chrome-512x512.png"
 
   socialIcons:
     - name: github
       url: "https://github.com/mhsuab"
     - name: LinkedIn
       url: "https://linkedin.com/in/mhsuab"
+    - name: email
+      url: "mailto:mhsuab1346@gmail.com"
 
   assets:
     disableHLJS: true
