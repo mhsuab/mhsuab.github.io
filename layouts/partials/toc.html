@@ -1,0 +1,17 @@
+<aside class="toc-container">
+  <a href="#top" style="text-decoration: none; font-weight: 700;">
+    {{ .Title }}
+  </a>
+  <div class="js-toc"></div>
+</aside>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.27.4/tocbot.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.27.4/tocbot.css" />
+<link rel="styleshh" href="/toc.css" />
+<script type="text/javascript">
+  tocbot.init({
+    headingSelector: "h1, h2, h3, h4",
+    orderedList: false,
+    collapseDepth: 2,
+  });
+</script>

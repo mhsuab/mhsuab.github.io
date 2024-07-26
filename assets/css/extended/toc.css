@@ -1,0 +1,88 @@
+.toc a:hover {
+  box-shadow: 0 1px;
+}
+
+.toc {
+  margin: 0 2px 40px;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  border-radius: var(--radius);
+  padding: 0.4em;
+}
+
+.dark .toc {
+  background: var(--entry);
+}
+
+.toc details summary {
+  cursor: zoom-in;
+  margin-inline-start: 20px;
+}
+
+.toc details[open] summary {
+  cursor: zoom-out;
+}
+
+.toc .details {
+  display: inline;
+  font-weight: 500;
+}
+
+.toc .inner {
+  margin: 0 20px;
+  padding: 10px 20px;
+}
+
+.toc li ul {
+  margin-inline-start: var(--gap);
+}
+
+.toc summary: focus {
+  outline: 0;
+}
+
+@media screen and (max-width: 1364px) {
+  .toc-container {
+    display: none !important;
+  }
+}
+
+.toc-container {
+  position: fixed;
+  top: 120px;
+  left: calc((100% - 864px) / 2 - 250px);
+  width: 250px;
+  max-height: calc(100% - 240px);
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toc-list {
+  padding: 0;
+}
+
+.toc-link {
+  text-decoration: none;
+}
+
+.toc-link::before {
+  background-color: transparent;
+}
+
+.toc-list-item {
+  padding-left: 10px;
+  list-style-type: none;
+  color: var(--user-p);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toc-list-item:hover {
+  color: var(--toc);
+}
+
+.is-active-link::before {
+  background-color: var(--toc) !important;
+}
