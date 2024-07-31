@@ -2,7 +2,7 @@ baseURL: "https://mhsuab.github.io/"
 languageCode: en-us
 title: mhsuab
 paginate: 5
-theme: [paper-mod]
+theme: [notice, paper-mod]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -53,7 +53,7 @@ params:
   author: 'mhsuab' # multiple authors
 
   defaultTheme: auto
-  ShowShareButtons: true
+  ShowShareButtons: false
   # ShowReadingTime: true
   # disableSpecial1stPost: true
   ShowPostNavLinks: true
