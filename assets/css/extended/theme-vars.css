@@ -3,11 +3,15 @@
   --user-s: #DDE5EB;
   --secondary: #0E2442;
   --link: #007B8A;
-  --toc: #6cabdd;
+  --border-start: #6cabdd;
+  --border: #aaaaaa;
 }
 
 .dark {
   --user-p: #DDE5EB;
   --user-s: #0E2442;
   --secondary: #DDE5EB;
+  --link: #6cabdd;
+  --border-start: #007B8A;
+  --border: #555555;
 }

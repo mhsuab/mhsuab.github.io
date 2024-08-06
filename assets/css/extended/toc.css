@@ -1,46 +1,3 @@
-.toc a:hover {
-  box-shadow: 0 1px;
-}
-
-.toc {
-  margin: 0 2px 40px;
-  border: 1px solid var(--border);
-  background: var(--code-bg);
-  border-radius: var(--radius);
-  padding: 0.4em;
-}
-
-.dark .toc {
-  background: var(--entry);
-}
-
-.toc details summary {
-  cursor: zoom-in;
-  margin-inline-start: 20px;
-}
-
-.toc details[open] summary {
-  cursor: zoom-out;
-}
-
-.toc .details {
-  display: inline;
-  font-weight: 500;
-}
-
-.toc .inner {
-  margin: 0 20px;
-  padding: 10px 20px;
-}
-
-.toc li ul {
-  margin-inline-start: var(--gap);
-}
-
-.toc summary: focus {
-  outline: 0;
-}
-
 @media screen and (max-width: 1364px) {
   .toc-container {
     display: none !important;
@@ -57,6 +14,17 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.js-toc {
+  padding-top: 5px;
+}
+
+.toc-title {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 0 !important;
 }
 
 .toc-list {
@@ -80,9 +48,9 @@
 }
 
 .toc-list-item:hover {
-  color: var(--toc);
+  color: var(--border-start);
 }
 
 .is-active-link::before {
-  background-color: var(--toc) !important;
+  background-color: var(--border-start) !important;
 }
