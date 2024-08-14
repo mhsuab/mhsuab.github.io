@@ -1,5 +1,9 @@
 .archive-entry {
-    padding: 5px 10px;
-    border-radius: 2.5px;
-    border-left: 3px solid var(--border-start);
+  padding: 5px 10px;
+  border-radius: 2px;
+  border-left: 3px solid rgb(var(--border-start));
+}
+
+.archive-month:not(:last-of-type) {
+  border-bottom: 1px solid rgba(var(--border-start), 0.3);
 }

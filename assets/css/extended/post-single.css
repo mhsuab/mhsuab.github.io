@@ -1,7 +1,8 @@
 .post-content a {
-  color: var(--link);
+  color: rgb(var(--link));
 }
 
 .post-content blockquote {
-  border-inline-start: 3px solid var(--border-start);
+  border-radius: 2px;
+  border-inline-start: 3px solid rgb(var(--border-start));
 }

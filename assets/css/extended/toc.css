@@ -6,10 +6,10 @@
 
 .toc-container {
   position: fixed;
-  top: 120px;
-  left: calc((100% - 864px) / 2 - 250px);
-  width: 250px;
-  max-height: calc(100% - 240px);
+  top: calc(var(--header-height) * 2);
+  left: calc((100% - var(--gap) * 30) / 2 - var(--toc-width));
+  width: var(--toc-width);
+  max-height: calc(100% - var(--header-height) * 4);
   font-size: 12px;
   white-space: nowrap;
   overflow: hidden;
@@ -42,15 +42,15 @@
 .toc-list-item {
   padding-left: 10px;
   list-style-type: none;
-  color: var(--user-p);
+  color: rgb(var(--user-p));
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .toc-list-item:hover {
-  color: var(--border-start);
+  color: rgb(var(--border-start));
 }
 
 .is-active-link::before {
-  background-color: var(--border-start) !important;
+  background-color: rgb(var(--border-start)) !important;
 }

@@ -1,17 +1,19 @@
 :root {
-  --user-p: #0E2442;
-  --user-s: #DDE5EB;
-  --secondary: #0E2442;
-  --link: #007B8A;
-  --border-start: #6cabdd;
-  --border: #aaaaaa;
+  --toc-width: 250px;
+  --nav-width: 1152px;
+  --user-p: 14, 36, 66;
+  --user-s: 221, 229, 235;
+  --link: 0, 123, 138;
+  --border-start: 108, 171, 221;
+  --border: rgb(170, 170, 170);
+  --secondary: rgb(var(--user-p));
 }
 
 .dark {
-  --user-p: #DDE5EB;
-  --user-s: #0E2442;
-  --secondary: #DDE5EB;
-  --link: #6cabdd;
-  --border-start: #007B8A;
-  --border: #555555;
+  --user-p: 221, 229, 235;
+  --user-s: 14, 36, 66;
+  --link: 108, 171, 221;
+  --border-start: 0, 123, 138;
+  --border: rgb(85, 85, 85);
+  --secondary: rgb(var(--user-p));
 }

@@ -1,0 +1,7 @@
+.header {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgba(var(--border-start), 0.3);
+  background: var(--code-bg);
+  z-index: 1;
+}

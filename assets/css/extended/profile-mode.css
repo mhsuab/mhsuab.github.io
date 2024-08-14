@@ -1,26 +1,26 @@
 .profile .profile_inner {
-    text-align: left;
+  text-align: left;
 }
 
 .profile_inner p {
-    margin-bottom: calc(var(--gap));
+  margin-bottom: calc(var(--gap));
 }
 
 .profile_inner h1 {
-    color: var(--user-p);
-    border-bottom: 2px solid var(--user-p);
-    margin: calc(var(--gap));
+  color: rgb(var(--user-p));
+  border-bottom: 2px solid rgb(var(--user-p));
+  margin: calc(var(--gap));
 }
 
 .profile_inner p > a {
-    color: var(--link);
-    text-decoration: none;
+  color: rgb(var(--link));
+  text-decoration: none;
 }
 
 .profile_inner p > strong {
-    color: var(--user-p);
+  color: rgb(var(--user-p));
 }
 
 .profile_inner p > a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
