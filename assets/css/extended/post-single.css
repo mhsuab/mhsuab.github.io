@@ -6,3 +6,8 @@
   border-radius: 2px;
   border-inline-start: 3px solid rgb(var(--border-start));
 }
+
+.mermaid {
+  display: flex;
+  justify-content: center;
+}

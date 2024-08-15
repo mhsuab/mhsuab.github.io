@@ -1,0 +1,29 @@
+{{ if .Param "math" }}
+  {{ partial "math.html" }}
+{{ end }}
+
+{{ if .Store.Get "hasMermaid" }}
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs";
+  const elems = document.querySelectorAll("pre.mermaid");
+  elems.forEach((elem) => elem.setAttribute("data-src", elem.innerHTML));
+
+  const render = () => {
+    const theme = document.body.className.includes("dark") ? "dark" : "default";
+    mermaid.initialize({
+      startOnLoad: true,
+      theme,
+    });
+    mermaid.init({theme}, elems);
+  };
+
+  render();
+  document.getElementById("theme-toggle").addEventListener("click", (_) => {
+    elems.forEach((elem) => {
+      elem.innerHTML = elem.getAttribute("data-src") ?? "";
+      elem.removeAttribute("data-processed");
+    });
+    render();
+  });
+</script>
+{{ end }}
