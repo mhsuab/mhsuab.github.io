@@ -36,7 +36,7 @@
 }
 
 .toc-link::before {
-  background-color: transparent;
+  background-color: rgb(var(--user-s)) !important;
 }
 
 .toc-list-item {

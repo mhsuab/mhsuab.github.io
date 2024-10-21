@@ -1,19 +1,16 @@
 :root {
   --toc-width: 250px;
   --nav-width: 1152px;
-  --user-p: 14, 36, 66;
-  --user-s: 221, 229, 235;
-  --link: 0, 123, 138;
-  --border-start: 108, 171, 221;
+  --user-p: 39, 55, 80;
+  --user-s: 191, 205, 218;
+  --link: 68, 191, 239;
+  --border-start: 9, 114, 145;
   --border: rgba(var(--border-start), 0.3);
   --secondary: rgb(var(--user-p));
 }
 
 .dark {
-  --user-p: 221, 229, 235;
-  --user-s: 14, 36, 66;
-  --link: 108, 171, 221;
-  --border-start: 39, 94, 139;
-  --border: rgba(var(--border-start), 0.3);
-  --secondary: rgb(var(--user-p));
+  --user-p: 191, 205, 218;
+  --user-s: 39, 55, 80;
+  --border-start: 190, 255, 222;
 }
