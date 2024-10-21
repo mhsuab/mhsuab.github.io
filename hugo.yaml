@@ -32,15 +32,18 @@ languages:
         - name: Search
           url: search/
           weight: 10
-        - name: Category
-          url: categories/
-          weight: 15
+        # - name: Category
+        #   url: categories/
+        #   weight: 15
         - name: Tag
           url: tags/
           weight: 15
-        - name: Series
-          url: series/
-          weight: 15
+        # - name: Series
+        #   url: series/
+        #   weight: 15
+        - name: Posts
+          url: posts/
+          weight: 20
 
 outputs:
   home:
@@ -79,6 +82,8 @@ params:
       url: "https://github.com/mhsuab"
     - name: LinkedIn
       url: "https://linkedin.com/in/mhsuab"
+    - name: discord
+      url: "https://discord.com/users/mhsuab"
     - name: email
       url: "mailto:mhsuab1346@gmail.com"
 
