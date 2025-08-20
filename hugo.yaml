@@ -1,7 +1,6 @@
 baseURL: "https://mhsuab.github.io/"
 languageCode: en-us
 title: mhsuab
-paginate: 5
 theme: [notice, paper-mod]
 
 enableInlineShortcodes: true
