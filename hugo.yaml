@@ -3,6 +3,10 @@ languageCode: en-us
 title: mhsuab
 theme: [notice, paper-mod]
 
+caches:
+  images:
+    dir: :cacheDir/images
+
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
