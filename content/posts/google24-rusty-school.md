@@ -3,7 +3,7 @@ title = 'Google24 - RUSTY SCHOOL'
 summary = 'Rust Reversing Challenge @ Google CTF 2024'
 date = 2024-07-28T21:48:12-04:00
 tags = ['CTF', 'writeups', 'reverse']
-draft = True
+draft = true
 +++
 > *REVERSE, 406 (6 solves)*
 

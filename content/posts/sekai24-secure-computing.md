@@ -3,7 +3,7 @@ title = 'Sekai24 - Secure Computing'
 summary = 'Windows Reversing Challenge @ Sekai CTF 2024'
 date = 2024-09-25T17:36:34-04:00
 tags = ['CTF', 'writeups', 'reverse', 'windows']
-draft = True
+draft = true
 +++
 
 <!-- draft = true -->
